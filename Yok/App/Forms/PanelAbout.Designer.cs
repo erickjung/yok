@@ -124,9 +124,9 @@ namespace yok.App.Forms
             this.label2.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(129, 377);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 16);
+            this.label2.Size = new System.Drawing.Size(80, 16);
             this.label2.TabIndex = 35;
-            this.label2.Text = "2012";
+            this.label2.Text = "2012-2015";
             // 
             // pictureBox1
             // 
@@ -163,10 +163,10 @@ namespace yok.App.Forms
             this.linkLabel.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel.Location = new System.Drawing.Point(129, 427);
             this.linkLabel.Name = "linkLabel";
-            this.linkLabel.Size = new System.Drawing.Size(91, 15);
+            this.linkLabel.Size = new System.Drawing.Size(231, 15);
             this.linkLabel.TabIndex = 37;
             this.linkLabel.TabStop = true;
-            this.linkLabel.Text = "www.yokon.me";
+            this.linkLabel.Text = "https://github.com/erickjung/yok";
             // 
             // pictureBox4
             // 
