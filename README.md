@@ -9,7 +9,7 @@ Also, YOK gives you the opportunity to control your computer by distance and ANO
 And to give you more power, YOK extends and gives you a way to do even more than just watch. 
 You can extend functionalities using LUA script language, running all the scripts by distance.
 
-## Functionalities
+## Features
 
 This is a very high level feature list:
 
