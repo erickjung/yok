@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45C698EE-062D-4415-945D-ACFC123D9E89}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThirdLib</RootNamespace>
+    <AssemblyName>ThirdLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IRC\Consts.cs" />
+    <Compile Include="IRC\EventArgs.cs" />
+    <Compile Include="IRC\Exceptions.cs" />
+    <Compile Include="IRC\IrcClient\BanInfo.cs" />
+    <Compile Include="IRC\IrcClient\Channel.cs" />
+    <Compile Include="IRC\IrcClient\ChannelInfo.cs" />
+    <Compile Include="IRC\IrcClient\ChannelUser.cs" />
+    <Compile Include="IRC\IrcClient\Delegates.cs" />
+    <Compile Include="IRC\IrcClient\EventArgs.cs" />
+    <Compile Include="IRC\IrcClient\IrcClient.cs" />
+    <Compile Include="IRC\IrcClient\IrcMessageData.cs" />
+    <Compile Include="IRC\IrcClient\IrcUser.cs" />
+    <Compile Include="IRC\IrcClient\NonRfcChannel.cs" />
+    <Compile Include="IRC\IrcClient\NonRfcChannelUser.cs" />
+    <Compile Include="IRC\IrcClient\WhoInfo.cs" />
+    <Compile Include="IRC\IrcCommands\IrcCommands.cs" />
+    <Compile Include="IRC\IrcCommands\Rfc2812.cs" />
+    <Compile Include="IRC\IrcConnection\Delegates.cs" />
+    <Compile Include="IRC\IrcConnection\EventArgs.cs" />
+    <Compile Include="IRC\IrcConnection\IrcConnection.cs" />
+    <Compile Include="IRC\IrcConnection\IrcProperties.cs" />
+    <Compile Include="IRC\IrcConnection\ProxyType.cs" />
+    <Compile Include="IRC\IrcFeatures\DccChat.cs" />
+    <Compile Include="IRC\IrcFeatures\DccConnection.cs" />
+    <Compile Include="IRC\IrcFeatures\DccSend.cs" />
+    <Compile Include="IRC\IrcFeatures\Delegates.cs" />
+    <Compile Include="IRC\IrcFeatures\EventArgs.cs" />
+    <Compile Include="IRC\IrcFeatures\IrcConstants.cs" />
+    <Compile Include="IRC\IrcFeatures\IrcFeatures.cs" />
+    <Compile Include="IRC\Logger.cs" />
+    <Compile Include="IRC\StarkSoftProxy\EventArgs\CreateConnectionAsyncCompletedEventArgs.cs" />
+    <Compile Include="IRC\StarkSoftProxy\Exceptions\ProxyException.cs" />
+    <Compile Include="IRC\StarkSoftProxy\HttpProxyClient.cs" />
+    <Compile Include="IRC\StarkSoftProxy\IProxyClient.cs" />
+    <Compile Include="IRC\StarkSoftProxy\ProxyClientFactory.cs" />
+    <Compile Include="IRC\StarkSoftProxy\Socks4aProxyClient.cs" />
+    <Compile Include="IRC\StarkSoftProxy\Socks4ProxyClient.cs" />
+    <Compile Include="IRC\StarkSoftProxy\Socks5ProxyClient.cs" />
+    <Compile Include="IRC\StarkSoftProxy\Utils.cs" />
+    <Compile Include="KeyLogger\Keylogger.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
